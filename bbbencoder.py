@@ -134,7 +134,6 @@ def main(page: ft.Page):
     page.window_height = 480
     page.window_resizable = False
     page.title = 'BBBEncoder'
-    page.bgcolor = '#FDFCFF'
 
     def pick_files_result(e: ft.FilePickerResultEvent):
         '''
@@ -341,16 +340,16 @@ def main(page: ft.Page):
         ),
     )
     start_view = ft.Column(controls=[ft.Row([overwrite_t, start_b], alignment=ft.MainAxisAlignment.SPACE_BETWEEN)])
-    pb = ft.ProgressBar(width=720, bgcolor="#eeeeee", value=0)
+    pb = ft.ProgressBar(width=720, value=0)
 
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
     page.add(
         ft.Text(value="Image encoder settings"),
         select_i_view,
         select_o_view,
-        ft.Divider(height=9, thickness=3, color='#FDFCFF'),
+        ft.Divider(height=9, thickness=3),
         select_fmt,
-        ft.Divider(height=9, thickness=3, color='#FDFCFF'),
+        ft.Divider(height=9, thickness=3),
         comp_v,
         comp,
         start_view,
