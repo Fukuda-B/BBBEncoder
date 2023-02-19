@@ -6,14 +6,14 @@ Image Encoder
 Parallel processing for fast image conversion  
 
 support intput image format (some have not been tested)
-```js
+```
 dng, nef, nrw, crw, cr2, cr3, erf, orf, pef, rw2, arw, srf,
 sr2, dcr, k25, kdc, mos, mef, 3rf, iiq, png, jpg, tiff,
 webp, bmp, gif, dib, icns, im, msp, pcx, ppm, sgi, tga
 ```
 
 support output image format (some have not been tested)
-```js
+```
 bmp, jpg, png, tiff, webp, gif, im, pcx, ppm, sgi, tga,
 pdf, dib, sr, hdr
 ```
